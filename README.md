@@ -91,7 +91,7 @@ BibTeX entries will be added as papers become publicly available.
 
 **Advait Dharmadhikari**
 
-- LinkedIn: *Add your LinkedIn URL*
+- LinkedIn: https://linkedin.com/in/advaitdharmadhikari
 - GitHub: https://github.com/advait27
 
 ---
