@@ -1,0 +1,779 @@
+{
+ "config": {
+  "n_per_family": 200,
+  "seed": 20260820,
+  "n_trajectories": 1200,
+  "total_steps": 36296,
+  "mean_steps": 30.246666666666666
+ },
+ "per_determination": {
+  "D1": {
+   "n": 200,
+   "base_rate": 0.475,
+   "cond": {
+    "BARE": {
+     "coverage": 0.0,
+     "coverage_ci": [
+      0.0,
+      0.018846005918320894
+     ],
+     "soundness": null,
+     "soundness_ci": null,
+     "joint": 0.0,
+     "unresolved_n": 200,
+     "heur_fdr_on_unresolved": 0.465,
+     "heur_error_all": 0.46499999999999997
+    },
+    "OTEL": {
+     "coverage": 0.0,
+     "coverage_ci": [
+      0.0,
+      0.018846005918320894
+     ],
+     "soundness": null,
+     "soundness_ci": null,
+     "joint": 0.0,
+     "unresolved_n": 200,
+     "heur_fdr_on_unresolved": 0.465,
+     "heur_error_all": 0.46499999999999997
+    },
+    "GUARD": {
+     "coverage": 0.3,
+     "coverage_ci": [
+      0.24074644243406385,
+      0.3667919599332645
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9398260695220669,
+      0.9999999999999999
+     ],
+     "joint": 0.3,
+     "unresolved_n": 140,
+     "heur_fdr_on_unresolved": 0.4857142857142857,
+     "heur_error_all": 0.46499999999999997
+    },
+    "TYPED": {
+     "coverage": 1.0,
+     "coverage_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "joint": 1.0,
+     "unresolved_n": 0,
+     "heur_fdr_on_unresolved": null,
+     "heur_error_all": 0.46499999999999997
+    }
+   }
+  },
+  "D2": {
+   "n": 200,
+   "base_rate": 0.285,
+   "cond": {
+    "BARE": {
+     "coverage": 0.52,
+     "coverage_ci": [
+      0.4510366005581654,
+      0.5882095592051018
+     ],
+     "soundness": 0.7307692307692307,
+     "soundness_ci": [
+      0.6384286523740854,
+      0.8066686013758588
+     ],
+     "joint": 0.38,
+     "unresolved_n": 96,
+     "heur_fdr_on_unresolved": 0.5520833333333334,
+     "heur_error_all": 0.5349999999999999
+    },
+    "OTEL": {
+     "coverage": 0.52,
+     "coverage_ci": [
+      0.4510366005581654,
+      0.5882095592051018
+     ],
+     "soundness": 0.7307692307692307,
+     "soundness_ci": [
+      0.6384286523740854,
+      0.8066686013758588
+     ],
+     "joint": 0.38,
+     "unresolved_n": 96,
+     "heur_fdr_on_unresolved": 0.5520833333333334,
+     "heur_error_all": 0.5349999999999999
+    },
+    "GUARD": {
+     "coverage": 0.52,
+     "coverage_ci": [
+      0.4510366005581654,
+      0.5882095592051018
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9643773831248793,
+      0.9999999999999999
+     ],
+     "joint": 0.52,
+     "unresolved_n": 96,
+     "heur_fdr_on_unresolved": 0.5520833333333334,
+     "heur_error_all": 0.5349999999999999
+    },
+    "TYPED": {
+     "coverage": 1.0,
+     "coverage_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "joint": 1.0,
+     "unresolved_n": 0,
+     "heur_fdr_on_unresolved": null,
+     "heur_error_all": 0.5349999999999999
+    }
+   }
+  },
+  "D3": {
+   "n": 200,
+   "base_rate": 0.685,
+   "cond": {
+    "BARE": {
+     "coverage": 0.0,
+     "coverage_ci": [
+      0.0,
+      0.018846005918320894
+     ],
+     "soundness": null,
+     "soundness_ci": null,
+     "joint": 0.0,
+     "unresolved_n": 200,
+     "heur_fdr_on_unresolved": 0.315,
+     "heur_error_all": 0.31499999999999995
+    },
+    "OTEL": {
+     "coverage": 0.0,
+     "coverage_ci": [
+      0.0,
+      0.018846005918320894
+     ],
+     "soundness": null,
+     "soundness_ci": null,
+     "joint": 0.0,
+     "unresolved_n": 200,
+     "heur_fdr_on_unresolved": 0.315,
+     "heur_error_all": 0.31499999999999995
+    },
+    "GUARD": {
+     "coverage": 0.305,
+     "coverage_ci": [
+      0.24536314352669053,
+      0.3719867987814547
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9407540837980555,
+      1.0
+     ],
+     "joint": 0.305,
+     "unresolved_n": 139,
+     "heur_fdr_on_unresolved": 0.5467625899280576,
+     "heur_error_all": 0.38
+    },
+    "TYPED": {
+     "coverage": 1.0,
+     "coverage_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "joint": 1.0,
+     "unresolved_n": 0,
+     "heur_fdr_on_unresolved": null,
+     "heur_error_all": 0.38
+    }
+   }
+  },
+  "D4": {
+   "n": 200,
+   "base_rate": 0.485,
+   "cond": {
+    "BARE": {
+     "coverage": 0.0,
+     "coverage_ci": [
+      0.0,
+      0.018846005918320894
+     ],
+     "soundness": null,
+     "soundness_ci": null,
+     "joint": 0.0,
+     "unresolved_n": 200,
+     "heur_fdr_on_unresolved": 0.515,
+     "heur_error_all": 0.515
+    },
+    "OTEL": {
+     "coverage": 0.0,
+     "coverage_ci": [
+      0.0,
+      0.018846005918320894
+     ],
+     "soundness": null,
+     "soundness_ci": null,
+     "joint": 0.0,
+     "unresolved_n": 200,
+     "heur_fdr_on_unresolved": 0.515,
+     "heur_error_all": 0.515
+    },
+    "GUARD": {
+     "coverage": 0.0,
+     "coverage_ci": [
+      0.0,
+      0.018846005918320894
+     ],
+     "soundness": null,
+     "soundness_ci": null,
+     "joint": 0.0,
+     "unresolved_n": 200,
+     "heur_fdr_on_unresolved": 0.515,
+     "heur_error_all": 0.515
+    },
+    "TYPED": {
+     "coverage": 1.0,
+     "coverage_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "joint": 1.0,
+     "unresolved_n": 0,
+     "heur_fdr_on_unresolved": null,
+     "heur_error_all": 0.515
+    }
+   }
+  },
+  "D5": {
+   "n": 200,
+   "base_rate": 0.565,
+   "cond": {
+    "BARE": {
+     "coverage": 0.285,
+     "coverage_ci": [
+      0.22694905173277297,
+      0.3511547308121051
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.936858991216536,
+      0.9999999999999999
+     ],
+     "joint": 0.285,
+     "unresolved_n": 143,
+     "heur_fdr_on_unresolved": 0.6643356643356644,
+     "heur_error_all": 0.475
+    },
+    "OTEL": {
+     "coverage": 0.285,
+     "coverage_ci": [
+      0.22694905173277297,
+      0.3511547308121051
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.936858991216536,
+      0.9999999999999999
+     ],
+     "joint": 0.285,
+     "unresolved_n": 143,
+     "heur_fdr_on_unresolved": 0.6643356643356644,
+     "heur_error_all": 0.475
+    },
+    "GUARD": {
+     "coverage": 0.285,
+     "coverage_ci": [
+      0.22694905173277297,
+      0.3511547308121051
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.936858991216536,
+      0.9999999999999999
+     ],
+     "joint": 0.285,
+     "unresolved_n": 143,
+     "heur_fdr_on_unresolved": 0.6643356643356644,
+     "heur_error_all": 0.475
+    },
+    "TYPED": {
+     "coverage": 1.0,
+     "coverage_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "joint": 1.0,
+     "unresolved_n": 0,
+     "heur_fdr_on_unresolved": null,
+     "heur_error_all": 0.475
+    }
+   }
+  },
+  "D6": {
+   "n": 200,
+   "base_rate": 0.7,
+   "cond": {
+    "BARE": {
+     "coverage": 0.315,
+     "coverage_ci": [
+      0.25462218077944276,
+      0.38235084141033604
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9425268096514744,
+      0.9999999999999999
+     ],
+     "joint": 0.315,
+     "unresolved_n": 137,
+     "heur_fdr_on_unresolved": 0.43795620437956206,
+     "heur_error_all": 0.30000000000000004
+    },
+    "OTEL": {
+     "coverage": 0.315,
+     "coverage_ci": [
+      0.25462218077944276,
+      0.38235084141033604
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9425268096514744,
+      0.9999999999999999
+     ],
+     "joint": 0.315,
+     "unresolved_n": 137,
+     "heur_fdr_on_unresolved": 0.43795620437956206,
+     "heur_error_all": 0.30000000000000004
+    },
+    "GUARD": {
+     "coverage": 0.315,
+     "coverage_ci": [
+      0.25462218077944276,
+      0.38235084141033604
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9425268096514744,
+      0.9999999999999999
+     ],
+     "joint": 0.315,
+     "unresolved_n": 137,
+     "heur_fdr_on_unresolved": 0.43795620437956206,
+     "heur_error_all": 0.30000000000000004
+    },
+    "TYPED": {
+     "coverage": 1.0,
+     "coverage_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "soundness": 1.0,
+     "soundness_ci": [
+      0.9811539940816791,
+      1.0
+     ],
+     "joint": 1.0,
+     "unresolved_n": 0,
+     "heur_fdr_on_unresolved": null,
+     "heur_error_all": 0.30000000000000004
+    }
+   }
+  }
+ },
+ "tests": {
+  "D1": {
+   "TYPED_vs_GUARD": {
+    "b": 140,
+    "c": 0,
+    "p": 1.4349296274686127e-42
+   },
+   "GUARD_vs_OTEL": {
+    "b": 60,
+    "c": 0,
+    "p": 1.734723475976807e-18
+   },
+   "OTEL_vs_BARE": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   }
+  },
+  "D2": {
+   "TYPED_vs_GUARD": {
+    "b": 96,
+    "c": 0,
+    "p": 2.524354896707238e-29
+   },
+   "GUARD_vs_OTEL": {
+    "b": 28,
+    "c": 0,
+    "p": 7.450580596923828e-09
+   },
+   "OTEL_vs_BARE": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   }
+  },
+  "D3": {
+   "TYPED_vs_GUARD": {
+    "b": 139,
+    "c": 0,
+    "p": 2.8698592549372254e-42
+   },
+   "GUARD_vs_OTEL": {
+    "b": 61,
+    "c": 0,
+    "p": 8.673617379884035e-19
+   },
+   "OTEL_vs_BARE": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   }
+  },
+  "D4": {
+   "TYPED_vs_GUARD": {
+    "b": 200,
+    "c": 0,
+    "p": 1.2446030555722283e-60
+   },
+   "GUARD_vs_OTEL": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   },
+   "OTEL_vs_BARE": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   }
+  },
+  "D5": {
+   "TYPED_vs_GUARD": {
+    "b": 143,
+    "c": 0,
+    "p": 1.793662034335766e-43
+   },
+   "GUARD_vs_OTEL": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   },
+   "OTEL_vs_BARE": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   }
+  },
+  "D6": {
+   "TYPED_vs_GUARD": {
+    "b": 137,
+    "c": 0,
+    "p": 1.1479437019748901e-41
+   },
+   "GUARD_vs_OTEL": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   },
+   "OTEL_vs_BARE": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   }
+  }
+ },
+ "pooled": {
+  "rate": {
+   "BARE": [
+    0.16333333333333333,
+    [
+     0.1434974359642348,
+     0.18531791648744983
+    ]
+   ],
+   "OTEL": [
+    0.16333333333333333,
+    [
+     0.1434974359642348,
+     0.18531791648744983
+    ]
+   ],
+   "GUARD": [
+    0.2875,
+    [
+     0.26260194558633887,
+     0.31375427935222433
+    ]
+   ],
+   "TYPED": [
+    1.0,
+    [
+     0.9968088824974979,
+     0.9999999999999998
+    ]
+   ]
+  },
+  "tests": {
+   "TYPED_vs_GUARD": {
+    "b": 855,
+    "c": 0,
+    "p": 8.32498966371959e-258
+   },
+   "GUARD_vs_OTEL": {
+    "b": 149,
+    "c": 0,
+    "p": 2.802596928649634e-45
+   },
+   "OTEL_vs_BARE": {
+    "b": 0,
+    "c": 0,
+    "p": 1.0
+   }
+  }
+ },
+ "overhead": {
+  "BARE": {
+   "bytes_per_traj": 2210.525,
+   "gzip_bytes_per_traj": 296.38916666666665,
+   "bytes_per_step": 73.08325986334582,
+   "fields_per_span": 4.0,
+   "emit_ms_per_1k_steps": 0.19001903791129648,
+   "bytes_ratio_vs_otel": 0.2510073156175485
+  },
+  "OTEL": {
+   "bytes_per_traj": 8806.615833333333,
+   "gzip_bytes_per_traj": 718.9566666666667,
+   "bytes_per_step": 291.1598798765704,
+   "fields_per_span": 10.005510249063258,
+   "emit_ms_per_1k_steps": 0.662564359700866,
+   "bytes_ratio_vs_otel": 1.0
+  },
+  "GUARD": {
+   "bytes_per_traj": 14202.380833333333,
+   "gzip_bytes_per_traj": 1427.6625,
+   "bytes_per_step": 469.5519340974212,
+   "fields_per_span": 15.296451399603262,
+   "emit_ms_per_1k_steps": 7.719903322678492,
+   "bytes_ratio_vs_otel": 1.6126944903826563
+  },
+  "TYPED": {
+   "bytes_per_traj": 14890.968333333334,
+   "gzip_bytes_per_traj": 1547.5783333333334,
+   "bytes_per_step": 492.3176658584968,
+   "fields_per_span": 15.969666078906766,
+   "emit_ms_per_1k_steps": 9.058235204981077,
+   "bytes_ratio_vs_otel": 1.6908842868983254
+  }
+ },
+ "degradation": {
+  "0.0": {
+   "BARE": {
+    "coverage": 0.18666666666666668,
+    "soundness": 0.875
+   },
+   "OTEL": {
+    "coverage": 0.18666666666666668,
+    "soundness": 0.875
+   },
+   "GUARD": {
+    "coverage": 0.2875,
+    "soundness": 1.0
+   },
+   "TYPED": {
+    "coverage": 1.0,
+    "soundness": 1.0
+   }
+  },
+  "0.05": {
+   "BARE": {
+    "coverage": 0.19416666666666665,
+    "soundness": 0.8540772532188842
+   },
+   "OTEL": {
+    "coverage": 0.19416666666666665,
+    "soundness": 0.8326180257510729
+   },
+   "GUARD": {
+    "coverage": 0.295,
+    "soundness": 0.9576271186440678
+   },
+   "TYPED": {
+    "coverage": 0.9333333333333333,
+    "soundness": 0.9892857142857143
+   }
+  },
+  "0.1": {
+   "BARE": {
+    "coverage": 0.19416666666666665,
+    "soundness": 0.8540772532188842
+   },
+   "OTEL": {
+    "coverage": 0.19333333333333333,
+    "soundness": 0.8146551724137931
+   },
+   "GUARD": {
+    "coverage": 0.2866666666666667,
+    "soundness": 0.9447674418604651
+   },
+   "TYPED": {
+    "coverage": 0.8675,
+    "soundness": 0.9807877041306436
+   }
+  },
+  "0.2": {
+   "BARE": {
+    "coverage": 0.1975,
+    "soundness": 0.7763713080168776
+   },
+   "OTEL": {
+    "coverage": 0.19,
+    "soundness": 0.8070175438596491
+   },
+   "GUARD": {
+    "coverage": 0.2775,
+    "soundness": 0.8978978978978979
+   },
+   "TYPED": {
+    "coverage": 0.7558333333333334,
+    "soundness": 0.9514884233737596
+   }
+  },
+  "0.4": {
+   "BARE": {
+    "coverage": 0.1875,
+    "soundness": 0.7288888888888889
+   },
+   "OTEL": {
+    "coverage": 0.18166666666666667,
+    "soundness": 0.7431192660550459
+   },
+   "GUARD": {
+    "coverage": 0.2525,
+    "soundness": 0.7986798679867987
+   },
+   "TYPED": {
+    "coverage": 0.5308333333333334,
+    "soundness": 0.9073783359497645
+   }
+  }
+ },
+ "proxy_sweep": [
+  {
+   "p_sens_given_protected": 0.95,
+   "p_sens_given_open": 0.02,
+   "proxy_precision": 0.980440097799511,
+   "BARE": 0.46,
+   "OTEL": 0.46,
+   "GUARD": 0.345,
+   "TYPED": 0.0
+  },
+  {
+   "p_sens_given_protected": 0.9,
+   "p_sens_given_open": 0.05,
+   "proxy_precision": 0.9554455445544554,
+   "BARE": 0.46,
+   "OTEL": 0.46,
+   "GUARD": 0.345,
+   "TYPED": 0.0
+  },
+  {
+   "p_sens_given_protected": 0.8,
+   "p_sens_given_open": 0.15,
+   "proxy_precision": 0.8065268065268065,
+   "BARE": 0.465,
+   "OTEL": 0.465,
+   "GUARD": 0.34,
+   "TYPED": 0.0
+  },
+  {
+   "p_sens_given_protected": 0.7,
+   "p_sens_given_open": 0.3,
+   "proxy_precision": 0.6811279826464208,
+   "BARE": 0.485,
+   "OTEL": 0.485,
+   "GUARD": 0.355,
+   "TYPED": 0.0
+  },
+  {
+   "p_sens_given_protected": 0.6,
+   "p_sens_given_open": 0.45,
+   "proxy_precision": 0.5527950310559007,
+   "BARE": 0.495,
+   "OTEL": 0.495,
+   "GUARD": 0.355,
+   "TYPED": 0.0
+  }
+ ],
+ "oracle_typing_control": {
+  "n": 200,
+  "oracle_typing_error_rate": 0.47,
+  "false_positive": 0.47,
+  "false_negative": 0.0,
+  "n_derived": 140,
+  "error_on_derived": 0.5,
+  "n_direct": 60,
+  "error_on_direct": 0.4
+ },
+ "corpus_composition": {
+  "F1": {
+   "n": 200,
+   "mean_steps": 29.96,
+   "direct_send": 0.3
+  },
+  "F2": {
+   "n": 200,
+   "mean_steps": 29.9,
+   "single_effecting": 0.52
+  },
+  "F3": {
+   "n": 200,
+   "mean_steps": 30.465,
+   "single_tenant": 0.305
+  },
+  "F4": {
+   "n": 200,
+   "mean_steps": 30.5,
+   "mean_chain_depth": 1.97
+  },
+  "F5": {
+   "n": 200,
+   "mean_steps": 30.565,
+   "name_decidable": 0.285
+  },
+  "F6": {
+   "n": 200,
+   "mean_steps": 30.09,
+   "single_principal": 0.315
+  }
+ },
+ "runtime_s": 7.150676488876343
+}
