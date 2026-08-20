@@ -1,4 +1,4 @@
-# FDE Research
+# AI Research
 
 > Open research on **Forward Deployed Engineering**, **AI Engineering**, **Enterprise AI**, and **Production AI Systems**.
 
