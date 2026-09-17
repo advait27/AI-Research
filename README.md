@@ -168,7 +168,7 @@ Planned and in-progress research topics:
   title        = {Forward Deployed Engineering: A Systems Engineering Perspective},
   year         = {2026},
   note         = {Preprint},
-  doi          = {10.5281/zenodo.22811876},
+  doi          = {10.5281/zenodo.22813634},
   howpublished = {\url{https://github.com/advait27/AI-Research}}
 }
 
