@@ -70,17 +70,17 @@ Three findings are worth stating plainly.
 
 The substrate costs 4.8% more serialised bytes than the governance layer it extends, and 8.4% more after compression.
 
-**Paper:** [`What_Agent_Traces_Cannot_Tell_You_Evidentiary_Adequacy_of_Runtime_Records_for_Agentic_AI_Oversight.pdf`](What_Agent_Traces_Cannot_Tell_You_Evidentiary_Adequacy_of_Runtime_Records_for_Agentic_AI_Oversight.pdf)
-**Code and data:** [`adequacy-bench/`](adequacy-bench/)
+**Paper:** [`evidentiaryadequacy.pdf`](evidentiaryadequacy.pdf)
+**Code and data:** [`AdequacyBenchartifact/`](AdequacyBenchartifact/)
 
 ---
 
 ## AdequacyBench
 
-The benchmark, four record emitters, resolvers, experiment driver and full result set behind Paper 2 live in [`adequacy-bench/`](adequacy-bench/).
+The benchmark, four record emitters, resolvers, experiment driver and full result set behind Paper 2 live in [`AdequacyBenchartifact/`](AdequacyBenchartifact/).
 
 ```
-adequacy-bench/
+AdequacyBenchartifact/
   adqbench/model.py      labelled values, capabilities, events, trajectories
   adqbench/generate.py   six determination families with adversarial decoys
   adqbench/emit.py       four record conditions
@@ -189,6 +189,7 @@ BibTeX entries will be updated with DOIs and venue details as papers are formall
 
 **Advait Dharmadhikari**
 
+- ORCID: https://orcid.org/0009-0005-5690-8338
 - LinkedIn: https://linkedin.com/in/advaitdharmadhikari
 - GitHub: https://github.com/advait27
 
@@ -198,4 +199,4 @@ BibTeX entries will be updated with DOIs and venue details as papers are formall
 
 Unless otherwise specified, all papers remain the intellectual property of their respective authors. Please cite appropriately when referencing this work.
 
-Code in `adequacy-bench/` is released to support replication and independent verification of the results reported in Paper 2.
+Code in `AdequacyBenchartifact/` is released to support replication and independent verification of the results reported in Paper 2.
