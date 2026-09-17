@@ -70,7 +70,7 @@ Three findings are worth stating plainly.
 
 The substrate costs 4.8% more serialised bytes than the governance layer it extends, and 8.4% more after compression.
 
-**Paper:** [`evidentiaryadequacy.pdf`](evidentiaryadequacy.pdf)
+**Paper:** [`What_Agent_Traces_Cannot_Tell_You_Evidentiary_Adequacy_of_Runtime_Records_for_Agentic_AI_Oversight.pdf`](What_Agent_Traces_Cannot_Tell_You_Evidentiary_Adequacy_of_Runtime_Records_for_Agentic_AI_Oversight.pdf)
 **Code and data:** [`AdequacyBenchartifact/`](AdequacyBenchartifact/)
 
 ---
