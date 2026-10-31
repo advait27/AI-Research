@@ -1,0 +1,429 @@
+{
+  "split": "evaluation",
+  "protocol_sha256": "630f39f5b82bf5d0f3563c1c337bf85c312fb26da592f3677786e5f5a2a31ab6",
+  "worlds_per_policy": 2880,
+  "base_seed_effect_clusters": 120,
+  "summary": [
+    {
+      "policy": "stop",
+      "episodes": 2880,
+      "accepted": 106,
+      "supported_beneficial": 64,
+      "unsupported": 42,
+      "wrong_version": 0,
+      "nonbeneficial_target": 18,
+      "beneficial_current": 88,
+      "mean_cost": 7.288888888888889,
+      "mean_risk_reduction": 0.001222222222222223
+    },
+    {
+      "policy": "screen_targeted",
+      "episodes": 2880,
+      "accepted": 216,
+      "supported_beneficial": 152,
+      "unsupported": 64,
+      "wrong_version": 0,
+      "nonbeneficial_target": 30,
+      "beneficial_current": 186,
+      "mean_cost": 17.690277777777776,
+      "mean_risk_reduction": 0.0025833333333333355
+    },
+    {
+      "policy": "full_revalidation",
+      "episodes": 2880,
+      "accepted": 92,
+      "supported_beneficial": 92,
+      "unsupported": 0,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 92,
+      "mean_cost": 16.066666666666666,
+      "mean_risk_reduction": 0.0012777777777777785
+    },
+    {
+      "policy": "cheapest",
+      "episodes": 2880,
+      "accepted": 144,
+      "supported_beneficial": 98,
+      "unsupported": 46,
+      "wrong_version": 0,
+      "nonbeneficial_target": 22,
+      "beneficial_current": 122,
+      "mean_cost": 18.77048611111111,
+      "mean_risk_reduction": 0.0016944444444444457
+    },
+    {
+      "policy": "information_gain",
+      "episodes": 2880,
+      "accepted": 128,
+      "supported_beneficial": 124,
+      "unsupported": 4,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 128,
+      "mean_cost": 20.12847222222222,
+      "mean_risk_reduction": 0.001777777777777779
+    },
+    {
+      "policy": "decision_loss",
+      "episodes": 2880,
+      "accepted": 34,
+      "supported_beneficial": 34,
+      "unsupported": 0,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 34,
+      "mean_cost": 4.403125,
+      "mean_risk_reduction": 0.0004722222222222224
+    },
+    {
+      "policy": "decision_loss_no_version",
+      "episodes": 2880,
+      "accepted": 34,
+      "supported_beneficial": 34,
+      "unsupported": 0,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 34,
+      "mean_cost": 4.403125,
+      "mean_risk_reduction": 0.0004722222222222224
+    },
+    {
+      "policy": "full_revalidation_no_version",
+      "episodes": 2880,
+      "accepted": 92,
+      "supported_beneficial": 0,
+      "unsupported": 92,
+      "wrong_version": 92,
+      "nonbeneficial_target": 34,
+      "beneficial_current": 92,
+      "mean_cost": 16.066666666666666,
+      "mean_risk_reduction": 0.0012777777777777785
+    }
+  ],
+  "by_budget": {
+    "16": [
+      {
+        "policy": "stop",
+        "episodes": 960,
+        "accepted": 22,
+        "supported_beneficial": 12,
+        "unsupported": 10,
+        "wrong_version": 0,
+        "nonbeneficial_target": 2,
+        "beneficial_current": 20,
+        "mean_cost": 4.266666666666667,
+        "mean_risk_reduction": 0.0008333333333333335
+      },
+      {
+        "policy": "screen_targeted",
+        "episodes": 960,
+        "accepted": 34,
+        "supported_beneficial": 18,
+        "unsupported": 16,
+        "wrong_version": 0,
+        "nonbeneficial_target": 6,
+        "beneficial_current": 28,
+        "mean_cost": 6.8875,
+        "mean_risk_reduction": 0.001166666666666667
+      },
+      {
+        "policy": "full_revalidation",
+        "episodes": 960,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "cheapest",
+        "episodes": 960,
+        "accepted": 26,
+        "supported_beneficial": 14,
+        "unsupported": 12,
+        "wrong_version": 0,
+        "nonbeneficial_target": 4,
+        "beneficial_current": 22,
+        "mean_cost": 11.542708333333334,
+        "mean_risk_reduction": 0.0009166666666666669
+      },
+      {
+        "policy": "information_gain",
+        "episodes": 960,
+        "accepted": 12,
+        "supported_beneficial": 12,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 12,
+        "mean_cost": 13.114583333333334,
+        "mean_risk_reduction": 0.0004999999999999999
+      },
+      {
+        "policy": "decision_loss",
+        "episodes": 960,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "decision_loss_no_version",
+        "episodes": 960,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "full_revalidation_no_version",
+        "episodes": 960,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      }
+    ],
+    "24": [
+      {
+        "policy": "stop",
+        "episodes": 960,
+        "accepted": 32,
+        "supported_beneficial": 18,
+        "unsupported": 14,
+        "wrong_version": 0,
+        "nonbeneficial_target": 6,
+        "beneficial_current": 26,
+        "mean_cost": 6.533333333333333,
+        "mean_risk_reduction": 0.0010833333333333335
+      },
+      {
+        "policy": "screen_targeted",
+        "episodes": 960,
+        "accepted": 68,
+        "supported_beneficial": 50,
+        "unsupported": 18,
+        "wrong_version": 0,
+        "nonbeneficial_target": 6,
+        "beneficial_current": 62,
+        "mean_cost": 17.95,
+        "mean_risk_reduction": 0.0025833333333333346
+      },
+      {
+        "policy": "full_revalidation",
+        "episodes": 960,
+        "accepted": 32,
+        "supported_beneficial": 32,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 32,
+        "mean_cost": 20.066666666666666,
+        "mean_risk_reduction": 0.0013333333333333337
+      },
+      {
+        "policy": "cheapest",
+        "episodes": 960,
+        "accepted": 44,
+        "supported_beneficial": 30,
+        "unsupported": 14,
+        "wrong_version": 0,
+        "nonbeneficial_target": 6,
+        "beneficial_current": 38,
+        "mean_cost": 19.034375,
+        "mean_risk_reduction": 0.001583333333333334
+      },
+      {
+        "policy": "information_gain",
+        "episodes": 960,
+        "accepted": 42,
+        "supported_beneficial": 40,
+        "unsupported": 2,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 42,
+        "mean_cost": 20.560416666666665,
+        "mean_risk_reduction": 0.001750000000000001
+      },
+      {
+        "policy": "decision_loss",
+        "episodes": 960,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "decision_loss_no_version",
+        "episodes": 960,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "full_revalidation_no_version",
+        "episodes": 960,
+        "accepted": 32,
+        "supported_beneficial": 0,
+        "unsupported": 32,
+        "wrong_version": 32,
+        "nonbeneficial_target": 12,
+        "beneficial_current": 32,
+        "mean_cost": 20.066666666666666,
+        "mean_risk_reduction": 0.0013333333333333337
+      }
+    ],
+    "40": [
+      {
+        "policy": "stop",
+        "episodes": 960,
+        "accepted": 52,
+        "supported_beneficial": 34,
+        "unsupported": 18,
+        "wrong_version": 0,
+        "nonbeneficial_target": 10,
+        "beneficial_current": 42,
+        "mean_cost": 11.066666666666666,
+        "mean_risk_reduction": 0.001750000000000001
+      },
+      {
+        "policy": "screen_targeted",
+        "episodes": 960,
+        "accepted": 114,
+        "supported_beneficial": 84,
+        "unsupported": 30,
+        "wrong_version": 0,
+        "nonbeneficial_target": 18,
+        "beneficial_current": 96,
+        "mean_cost": 28.233333333333334,
+        "mean_risk_reduction": 0.004000000000000003
+      },
+      {
+        "policy": "full_revalidation",
+        "episodes": 960,
+        "accepted": 60,
+        "supported_beneficial": 60,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 60,
+        "mean_cost": 26.133333333333333,
+        "mean_risk_reduction": 0.0025000000000000014
+      },
+      {
+        "policy": "cheapest",
+        "episodes": 960,
+        "accepted": 74,
+        "supported_beneficial": 54,
+        "unsupported": 20,
+        "wrong_version": 0,
+        "nonbeneficial_target": 12,
+        "beneficial_current": 62,
+        "mean_cost": 25.734375,
+        "mean_risk_reduction": 0.0025833333333333346
+      },
+      {
+        "policy": "information_gain",
+        "episodes": 960,
+        "accepted": 74,
+        "supported_beneficial": 72,
+        "unsupported": 2,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 74,
+        "mean_cost": 26.710416666666667,
+        "mean_risk_reduction": 0.003083333333333335
+      },
+      {
+        "policy": "decision_loss",
+        "episodes": 960,
+        "accepted": 34,
+        "supported_beneficial": 34,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 34,
+        "mean_cost": 9.209375,
+        "mean_risk_reduction": 0.0014166666666666672
+      },
+      {
+        "policy": "decision_loss_no_version",
+        "episodes": 960,
+        "accepted": 34,
+        "supported_beneficial": 34,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 34,
+        "mean_cost": 9.209375,
+        "mean_risk_reduction": 0.0014166666666666672
+      },
+      {
+        "policy": "full_revalidation_no_version",
+        "episodes": 960,
+        "accepted": 60,
+        "supported_beneficial": 0,
+        "unsupported": 60,
+        "wrong_version": 60,
+        "nonbeneficial_target": 22,
+        "beneficial_current": 60,
+        "mean_cost": 26.133333333333333,
+        "mean_risk_reduction": 0.0025000000000000014
+      }
+    ]
+  },
+  "paired_intervals": [
+    {
+      "comparison": "decision_loss minus full_revalidation",
+      "metric": "supported_beneficial",
+      "mean_difference": -0.02013888888888889,
+      "lower_95": -0.04027777777777778,
+      "upper_95": -0.0020833333333333346,
+      "clusters": 120,
+      "resamples": 2000
+    },
+    {
+      "comparison": "decision_loss minus full_revalidation",
+      "metric": "unsupported",
+      "mean_difference": 0.0,
+      "lower_95": 0.0,
+      "upper_95": 0.0,
+      "clusters": 120,
+      "resamples": 2000
+    },
+    {
+      "comparison": "decision_loss minus full_revalidation",
+      "metric": "cost",
+      "mean_difference": -11.663541666666669,
+      "lower_95": -12.188541666666671,
+      "upper_95": -11.093402777777783,
+      "clusters": 120,
+      "resamples": 2000
+    }
+  ]
+}

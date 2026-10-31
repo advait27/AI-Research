@@ -1,0 +1,90 @@
+NOVELTY AND CONTRIBUTION REVIEW
+Evidence Recovery in AI Assisted Six Sigma
+Reviewed 30 October 2026
+
+Overall assessment
+The current manuscript is a transparent exploratory prototype paper. Its strongest next contribution would require a new method and experiment; wording changes alone cannot establish novelty. The existing cost saving is mainly explained by perfect diagnostic flags, known successful repairs, and a comparator that always repeats both audits.
+
+The manuscript and experiment source were reviewed. The paper itself has not been changed by this review. No new planner, LLM evaluation, or manufacturing experiment is claimed.
+
+1. Correct the related-work boundary before strengthening the novelty claim
+DMAIC-Bench is closer than a stop-only comparison suggests. Its case inventory includes visual judgment repaired and re-proved (case 33), screened changes and confirmation (case 36), and response-surface optimization and confirmation (case 39). Its example routes include a repair that succeeds and another that fails. It also contains a finite provision-query budget. We should not claim that repair, rechecking, confirmation, or any budget is absent from it.
+Source: Peng et al. (2026), arXiv:2610.32305v1, case inventory and example routes: https://arxiv.org/html/2610.32305v1
+
+Repair and experiment selection have longstanding decision-theoretic foundations. Breese and Heckerman consider observations, component repairs followed by observations, and configuration changes followed by observations. Their paper appeared at UAI 1996; its arXiv upload is from 2013, not the original publication year. We should cite it and avoid presenting cost-sensitive diagnosis as a new general algorithm.
+Source: https://arxiv.org/abs/1302.3563
+
+Murphy's Model Discovery Agent combines LLM hypotheses, value-of-information experiment design, and approximate Bayesian inference. This is additional prior art against claiming novelty for the combination of an LLM and Bayesian experiment selection. Its abstract and canonical metadata were inspected; no replication or detailed empirical comparison was conducted.
+Source: https://arxiv.org/abs/2608.09696v5
+
+Hinov's evidence-grounded runtime assurance already covers stale-evidence invalidation after design changes and structured evidence replacement. Claim versioning by itself is therefore not sufficient novelty either.
+Source already included in manuscript: https://www.mdpi.com/2673-4117/7/10/495
+
+The search is targeted rather than systematic. No assertion that the proposed combination is globally absent is warranted.
+
+2. Recommended central research question
+Can a budgeted DMAIC assistant distinguish evidence repairs that preserve the original process-effect claim from repairs that change the intervention, and then choose the least costly evidence acquisition needed for the correct claim?
+
+This narrows the research target to the interaction between claim identity, recovery choices, and statistical confirmation. It is a candidate application-specific contribution, not an established first-of-its-kind result.
+
+Why this matters in our implementation
+The sensor_drift variable changes the physical treatment benefit by 0.06 until calibration. Calibration is therefore partly a process intervention, whereas the label audit changes observation quality. Both are called repairs, but they do not have the same effect on what is being estimated. A post-calibration comparison cannot automatically validate a claim about an uncalibrated process configuration.
+
+Proposed representation
+Represent a claim by the intervention version, comparator version, target population/time window, defect definition, effect threshold, and measurement/label versions. Record which components a repair changes.
+- Evidence-only repair: the process-effect target stays fixed, but evidence must be reacquired or recomputed.
+- Process-altering repair: establish a new target/version; fresh data on that version cannot be used to retrospectively endorse an old configuration.
+- Irrelevant-branch repair: keep unaffected claims available and spend no repair budget on their independent prerequisites.
+
+Whether previously recorded observations can be reused must be an explicit rule. Timestamping or attaching a hash is not itself proof of comparability.
+
+3. A useful result can be added from the existing outputs
+A post-hoc reconstruction separates substantive benefit from satisfaction of the declared evidence prerequisites. These are different dimensions. The manuscript's Table 2 column 'Valid' currently means substantively beneficial, not evidence-admissible.
+
+Policy                 Accepted   Beneficial   Beneficial and declared prerequisites met
+Historical             639        220          20
+Stop                    25         25          25
+Full revalidation      125        125         125
+Targeted recovery      125        125         125
+
+The historical policy accepts 220 genuinely beneficial interventions, but 200 of those occur in settings with a known failed prerequisite. Of all its 639 acceptances, 619 occur with a failed prerequisite; 419 are also substantively nonbeneficial. Thus the observed outcome and the admissibility of its supporting evidence must be reported separately.
+
+These counts are reconstructed from the saved trial rows, fault settings, and implemented policy rules. They are not a blind independent execution-trace audit or a check of every scientific assumption. All non-clean historical settings have known failed diagnostic gates; the implemented historical policy performs no repairs. Other accepted policy routes use repaired prerequisites and randomized confirmation. The existing perfect diagnostics make those reconstructed labels straightforward.
+
+Recommended manuscript edits
+- Rename Table 2's 'Valid' column to 'Beneficial'.
+- Add the outcome-by-prerequisite cross-tabulation and explicitly identify it as exploratory post-hoc reconstruction.
+- Reserve 'evidence-supported' for the declared gate conditions, not a global scientific guarantee.
+- In the next experiment, log every decision route and score it independently rather than deriving support solely from a policy name.
+Data: claim-support-audit.json in this folder. The audit reads the original trials; it does not alter them.
+
+4. Experiment needed for a stronger contribution
+Construct cases with identical initial evidence but different hidden explanations: measurement-only corruption, true physical change, and combined faults. Let the agent choose among inspections, repeated measurements, recalibration, and new pilot designs. Cheap tests must be imperfect; repairs can fail; the budget must sometimes bind. Include all eight binary fault combinations instead of only five settings. Add at least one independent second claim to test selective preservation of evidence.
+
+Compare the following at matched total cost and comparable acceptance risk:
+- full revalidation;
+- the existing deterministic targeted rule;
+- cheapest feasible action;
+- information-gain-based diagnosis;
+- decision-loss-based recovery tied to the claim/version;
+- an LLM planner using the same restricted observations, once a real model is evaluated.
+
+A decision-loss planner is a known class of method. Its use here must be evaluated against those alternatives; naming it does not make it new.
+
+Required outcome measures
+- Actual beneficial deployments.
+- Accepted claims with failed declared prerequisites.
+- Wrong-version endorsements: a claim about one configuration supported only by data from another, inadmissible configuration.
+- Cost and observations required for each supported beneficial claim.
+- Missed recoverable beneficial interventions.
+- Unaffected claims unnecessarily suspended or rerun.
+
+Freeze the experimental protocol and held-out scenarios before collecting the next results. Use uncertainty estimates respecting shared seeds. If sample size adapts to accumulating outcomes, replace the existing fixed-sample bounds with a justified sequential inference procedure. Do not reuse the present Wilson rule under repeated looks.
+
+5. Suggested replacement for a future contribution paragraph
+Proposed wording only; not a statement of a completed experiment:
+
+We study evidence recovery when corrective actions can change either the measurement process or the intervention whose effect is being assessed. The proposed framework associates improvement claims with explicit process and evidence versions, distinguishes restoration of an existing claim from establishment of a new claim, and selects recovery actions under an acquisition budget. Evaluation separates substantive process benefit from evidence admissibility and tests whether agents avoid endorsing an earlier configuration using evidence collected only after a process-altering repair.
+
+6. Priority
+First add the supported benefit-versus-admissibility analysis and correct the related-work boundaries. Then implement claim identity and the ambiguous repair experiment. Noisy active recovery is already mentioned in Section 8, so another future-work paragraph on that topic would not by itself materially strengthen the paper. The added value must appear in the implemented method and evaluated results.

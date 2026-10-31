@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-31",
+  "status": "Local protocol fixed before first extension run; not externally preregistered",
+  "development_repetitions_per_effect": 8,
+  "evaluation_repetitions_per_effect": 40,
+  "development_seed": 20261031,
+  "evaluation_seed": 20271031,
+  "faults": "all eight combinations of sensor drift, differential label bias, historical confounding",
+  "effects": [
+    0.04,
+    0.0,
+    -0.02
+  ],
+  "budgets": [
+    16,
+    24,
+    40
+  ],
+  "pilot_sizes_per_arm": [
+    400,
+    800,
+    1600
+  ],
+  "baseline_defect_risk": 0.12,
+  "meaningful_benefit": 0.01,
+  "initial_screens": {
+    "sensitivity": 0.8,
+    "specificity": 0.9,
+    "cost_per_fault": 1
+  },
+  "precision_inspections": {
+    "sensitivity": 0.98,
+    "specificity": 0.98,
+    "cost_per_fault": 2.5
+  },
+  "repair_verification": {
+    "sensitivity": 0.9,
+    "specificity": 0.95,
+    "cost_per_fault": 1
+  },
+  "calibration": {
+    "success_probability": 0.85,
+    "cost": 4,
+    "changes_process_version": true
+  },
+  "label_repair": {
+    "success_probability": 0.9,
+    "cost": 6,
+    "changes_process_version": false
+  },
+  "observation_cost": 0.01,
+  "planner": {
+    "fault_prior": 0.5,
+    "effect_prior": "uniform on declared effect grid",
+    "horizon_actions": 4,
+    "supported_benefit_reward": 300,
+    "unsupported_or_nonbeneficial_penalty": 1000,
+    "acceptance_forecast": "normal approximation to fixed-sample Wilson difference rule"
+  },
+  "policies": [
+    "stop",
+    "screen_targeted",
+    "full_revalidation",
+    "cheapest",
+    "information_gain",
+    "decision_loss",
+    "decision_loss_no_version",
+    "full_revalidation_no_version"
+  ],
+  "no_version_ablation": "Each ablated policy uses its parent action selector and pilot data, but omits version bookkeeping and continues to name original process v0; the scoped parent can establish a new v1 claim. This is a deliberately faulty software ablation, not a strong competing planner.",
+  "audit": "Separate hidden-state scorer checks target/evidence version match, remaining measurement faults, and target process benefit",
+  "independent_branch": "Existing line-B claim is preserved by line-A actions; checked in each episode and adversarial unit tests, not a multi-claim optimization study",
+  "inference": "One pilot per episode; sample size selected before pilot data; no repeated-look stopping",
+  "uncertainty": "Paired bootstrap clustered by base seed/effect pair across faults and budgets; 2000 resamples; exploratory 95% percentile intervals",
+  "tuning": "Development diagnostics only; report frozen evaluation even if method loses; any protocol change requires a separately versioned record",
+  "version": "1.1",
+  "amendment_before_evaluation": "Development run exposed no accepted calibration cases for the conservative decision-loss policy. Added a full-revalidation bookkeeping ablation to ensure version-change coverage. No planner utility weights, test properties, budgets, seeds, or sample sizes changed."
+}

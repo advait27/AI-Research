@@ -1,0 +1,34 @@
+HICSS MANUSCRIPT DRAFT
+Revised 31 October 2026
+
+Deliverables
+- evidence-recovery-hicss-draft.docx: editable manuscript with the supplied author block.
+- evidence-recovery-hicss-draft.pdf: visually checked PDF of the same manuscript.
+
+Format basis
+Official author instructions: https://hicss.hawaii.edu/authors/
+Officially linked template: https://www.overleaf.com/latex/templates/hawaii-international-conference-on-system-sciences-hicss-final-formatting-specifications/zbrwyxgpvxyk
+Published HICSS layout/structure example inspected: Van Looy, Rosemann, and Bandara (2024), A theoretical lens on maturity models as boundary objects, https://biblio.ugent.be/publication/01HQJR62NKGVG91ERDEPWDW54T
+The example informed presentation only; its subject matter is not used as evidence in this paper.
+
+The manuscript reconstructs the published HICSS specifications in Word; it does not claim to be an unmodified official template file. It uses US Letter, two columns, 10-point Times New Roman body text, 14-point title, 12/11-point headings, 9-point captions and references, no page numbers or headers/footers, a 140-word abstract, five keywords, and alphabetized author-date references. The PDF renderer embeds metric-compatible Liberation Serif/Sans substitutes; Word styles retain Times New Roman and Arial.
+
+Scientific scope
+The revised paper reports two completed simulation studies. Study I separates substantive benefit from declared prerequisite support. Study II evaluates separate process and observation versions, noisy diagnostics, imperfect repairs, eight policies, and three budgets. It contains 2,880 episodes per policy and 23,040 evaluation traces. The decision-loss policy spends less but recovers fewer supported beneficial claims than full revalidation. A deliberately faulty bookkeeping ablation exposes wrong-version endorsements under identical deployment outcomes. No LLM, real manufacturing deployment, or general first-ever novelty is established.
+
+Data provenance
+Study I: ../evidence-recovery/results/summary.json and trials.csv; claim-support-audit.json in this folder.
+Study II: ../evidence-recovery/results/versioned-recovery/evaluation/summary.json, trials.csv, traces.jsonl, and audit.json.
+Protocol: ../evidence-recovery/research/VERSIONED_PROTOCOL.json. A documented amendment followed development and preceded evaluation. This was local protocol freezing, not external preregistration.
+Code and tests: ../evidence-recovery/src/ and tests/.
+Sixteen behavioral tests pass. Reference replay checks 23,040 evaluation traces without scoring mismatches. Shared helpers limit its independence.
+
+Author details
+Advait Dharmadhikari
+Independent Researcher
+Dublin, Ireland
+ORCID: 0009-0005-5690-8338
+DOI: 10.5281/zenodo.23834103
+
+Before submission
+Confirm the target HICSS edition and minitrack and complete independent subject-matter review. Remove author details if anonymous review is required. The seven-page PDF has been visually checked. Outcomes remain limited to the stated simulator and software tests.

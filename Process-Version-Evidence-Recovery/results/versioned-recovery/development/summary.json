@@ -1,0 +1,381 @@
+{
+  "split": "development",
+  "protocol_sha256": "bae1ca53b750a7572ad405c2549021dd6352898a2e33a38e390b6a6d4ce833d3",
+  "worlds_per_policy": 576,
+  "base_seed_effect_clusters": 24,
+  "summary": [
+    {
+      "policy": "stop",
+      "episodes": 576,
+      "accepted": 24,
+      "supported_beneficial": 12,
+      "unsupported": 12,
+      "wrong_version": 0,
+      "nonbeneficial_target": 6,
+      "beneficial_current": 18,
+      "mean_cost": 6.472222222222222,
+      "mean_risk_reduction": 0.0012500000000000002
+    },
+    {
+      "policy": "screen_targeted",
+      "episodes": 576,
+      "accepted": 50,
+      "supported_beneficial": 26,
+      "unsupported": 24,
+      "wrong_version": 0,
+      "nonbeneficial_target": 12,
+      "beneficial_current": 38,
+      "mean_cost": 16.822916666666668,
+      "mean_risk_reduction": 0.0026388888888888903
+    },
+    {
+      "policy": "full_revalidation",
+      "episodes": 576,
+      "accepted": 8,
+      "supported_beneficial": 8,
+      "unsupported": 0,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 8,
+      "mean_cost": 14.833333333333334,
+      "mean_risk_reduction": 0.0005555555555555556
+    },
+    {
+      "policy": "cheapest",
+      "episodes": 576,
+      "accepted": 30,
+      "supported_beneficial": 18,
+      "unsupported": 12,
+      "wrong_version": 0,
+      "nonbeneficial_target": 6,
+      "beneficial_current": 24,
+      "mean_cost": 18.760416666666668,
+      "mean_risk_reduction": 0.0016666666666666672
+    },
+    {
+      "policy": "information_gain",
+      "episodes": 576,
+      "accepted": 20,
+      "supported_beneficial": 20,
+      "unsupported": 0,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 20,
+      "mean_cost": 19.78125,
+      "mean_risk_reduction": 0.0013888888888888892
+    },
+    {
+      "policy": "decision_loss",
+      "episodes": 576,
+      "accepted": 6,
+      "supported_beneficial": 6,
+      "unsupported": 0,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 6,
+      "mean_cost": 4.262152777777778,
+      "mean_risk_reduction": 0.0004166666666666667
+    },
+    {
+      "policy": "decision_loss_no_version",
+      "episodes": 576,
+      "accepted": 6,
+      "supported_beneficial": 6,
+      "unsupported": 0,
+      "wrong_version": 0,
+      "nonbeneficial_target": 0,
+      "beneficial_current": 6,
+      "mean_cost": 4.262152777777778,
+      "mean_risk_reduction": 0.0004166666666666667
+    }
+  ],
+  "by_budget": {
+    "16": [
+      {
+        "policy": "stop",
+        "episodes": 192,
+        "accepted": 6,
+        "supported_beneficial": 2,
+        "unsupported": 4,
+        "wrong_version": 0,
+        "nonbeneficial_target": 2,
+        "beneficial_current": 4,
+        "mean_cost": 3.9166666666666665,
+        "mean_risk_reduction": 0.0008333333333333334
+      },
+      {
+        "policy": "screen_targeted",
+        "episodes": 192,
+        "accepted": 10,
+        "supported_beneficial": 2,
+        "unsupported": 8,
+        "wrong_version": 0,
+        "nonbeneficial_target": 4,
+        "beneficial_current": 6,
+        "mean_cost": 6.71875,
+        "mean_risk_reduction": 0.00125
+      },
+      {
+        "policy": "full_revalidation",
+        "episodes": 192,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "cheapest",
+        "episodes": 192,
+        "accepted": 6,
+        "supported_beneficial": 2,
+        "unsupported": 4,
+        "wrong_version": 0,
+        "nonbeneficial_target": 2,
+        "beneficial_current": 4,
+        "mean_cost": 11.65625,
+        "mean_risk_reduction": 0.0008333333333333334
+      },
+      {
+        "policy": "information_gain",
+        "episodes": 192,
+        "accepted": 2,
+        "supported_beneficial": 2,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 2,
+        "mean_cost": 13.09375,
+        "mean_risk_reduction": 0.0004166666666666667
+      },
+      {
+        "policy": "decision_loss",
+        "episodes": 192,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "decision_loss_no_version",
+        "episodes": 192,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      }
+    ],
+    "24": [
+      {
+        "policy": "stop",
+        "episodes": 192,
+        "accepted": 8,
+        "supported_beneficial": 4,
+        "unsupported": 4,
+        "wrong_version": 0,
+        "nonbeneficial_target": 2,
+        "beneficial_current": 6,
+        "mean_cost": 5.833333333333333,
+        "mean_risk_reduction": 0.00125
+      },
+      {
+        "policy": "screen_targeted",
+        "episodes": 192,
+        "accepted": 16,
+        "supported_beneficial": 8,
+        "unsupported": 8,
+        "wrong_version": 0,
+        "nonbeneficial_target": 4,
+        "beneficial_current": 12,
+        "mean_cost": 17.25,
+        "mean_risk_reduction": 0.0024999999999999996
+      },
+      {
+        "policy": "full_revalidation",
+        "episodes": 192,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 18.833333333333332,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "cheapest",
+        "episodes": 192,
+        "accepted": 8,
+        "supported_beneficial": 4,
+        "unsupported": 4,
+        "wrong_version": 0,
+        "nonbeneficial_target": 2,
+        "beneficial_current": 6,
+        "mean_cost": 19.145833333333332,
+        "mean_risk_reduction": 0.00125
+      },
+      {
+        "policy": "information_gain",
+        "episodes": 192,
+        "accepted": 6,
+        "supported_beneficial": 6,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 6,
+        "mean_cost": 20.375,
+        "mean_risk_reduction": 0.00125
+      },
+      {
+        "policy": "decision_loss",
+        "episodes": 192,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      },
+      {
+        "policy": "decision_loss_no_version",
+        "episodes": 192,
+        "accepted": 0,
+        "supported_beneficial": 0,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 0,
+        "mean_cost": 2.0,
+        "mean_risk_reduction": 0.0
+      }
+    ],
+    "40": [
+      {
+        "policy": "stop",
+        "episodes": 192,
+        "accepted": 10,
+        "supported_beneficial": 6,
+        "unsupported": 4,
+        "wrong_version": 0,
+        "nonbeneficial_target": 2,
+        "beneficial_current": 8,
+        "mean_cost": 9.666666666666666,
+        "mean_risk_reduction": 0.0016666666666666668
+      },
+      {
+        "policy": "screen_targeted",
+        "episodes": 192,
+        "accepted": 24,
+        "supported_beneficial": 16,
+        "unsupported": 8,
+        "wrong_version": 0,
+        "nonbeneficial_target": 4,
+        "beneficial_current": 20,
+        "mean_cost": 26.5,
+        "mean_risk_reduction": 0.0041666666666666675
+      },
+      {
+        "policy": "full_revalidation",
+        "episodes": 192,
+        "accepted": 8,
+        "supported_beneficial": 8,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 8,
+        "mean_cost": 23.666666666666668,
+        "mean_risk_reduction": 0.0016666666666666668
+      },
+      {
+        "policy": "cheapest",
+        "episodes": 192,
+        "accepted": 16,
+        "supported_beneficial": 12,
+        "unsupported": 4,
+        "wrong_version": 0,
+        "nonbeneficial_target": 2,
+        "beneficial_current": 14,
+        "mean_cost": 25.479166666666668,
+        "mean_risk_reduction": 0.0029166666666666664
+      },
+      {
+        "policy": "information_gain",
+        "episodes": 192,
+        "accepted": 12,
+        "supported_beneficial": 12,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 12,
+        "mean_cost": 25.875,
+        "mean_risk_reduction": 0.0024999999999999996
+      },
+      {
+        "policy": "decision_loss",
+        "episodes": 192,
+        "accepted": 6,
+        "supported_beneficial": 6,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 6,
+        "mean_cost": 8.786458333333334,
+        "mean_risk_reduction": 0.00125
+      },
+      {
+        "policy": "decision_loss_no_version",
+        "episodes": 192,
+        "accepted": 6,
+        "supported_beneficial": 6,
+        "unsupported": 0,
+        "wrong_version": 0,
+        "nonbeneficial_target": 0,
+        "beneficial_current": 6,
+        "mean_cost": 8.786458333333334,
+        "mean_risk_reduction": 0.00125
+      }
+    ]
+  },
+  "paired_intervals": [
+    {
+      "comparison": "decision_loss minus full_revalidation",
+      "metric": "supported_beneficial",
+      "mean_difference": -0.0034722222222222233,
+      "lower_95": -0.02777777777777778,
+      "upper_95": 0.013888888888888888,
+      "clusters": 24,
+      "resamples": 2000
+    },
+    {
+      "comparison": "decision_loss minus full_revalidation",
+      "metric": "unsupported",
+      "mean_difference": 0.0,
+      "lower_95": 0.0,
+      "upper_95": 0.0,
+      "clusters": 24,
+      "resamples": 2000
+    },
+    {
+      "comparison": "decision_loss minus full_revalidation",
+      "metric": "cost",
+      "mean_difference": -10.571180555555554,
+      "lower_95": -11.986111111111112,
+      "upper_95": -9.164930555555552,
+      "clusters": 24,
+      "resamples": 2000
+    }
+  ]
+}

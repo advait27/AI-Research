@@ -1,0 +1,71 @@
+{
+  "result": {
+    "fault": "combined",
+    "true_benefit_after_repair": 0.04,
+    "seed": 20261027,
+    "policy": "targeted_recovery",
+    "claimed": 1,
+    "cost": 27.0,
+    "lower_bound": 0.02094095609139697,
+    "upper_bound": 0.10346168438289355,
+    "reason": "randomized_confirmation",
+    "false_claim": 0,
+    "true_claim": 1,
+    "missed_opportunity": 0,
+    "deployed_risk_reduction": 0.04
+  },
+  "trace": [
+    {
+      "event": "invalidate",
+      "source": "measurement",
+      "affected": [
+        "cause",
+        "control_plan",
+        "effect",
+        "improvement_claim",
+        "measurement"
+      ]
+    },
+    {
+      "event": "invalidate",
+      "source": "labels",
+      "affected": [
+        "cause",
+        "control_plan",
+        "effect",
+        "improvement_claim",
+        "labels"
+      ]
+    },
+    {
+      "event": "invalidate",
+      "source": "cause",
+      "affected": [
+        "cause",
+        "control_plan",
+        "effect",
+        "improvement_claim"
+      ]
+    },
+    {
+      "event": "calibrate_sensor"
+    },
+    {
+      "event": "audit_labels"
+    },
+    {
+      "event": "randomized_pilot",
+      "n_per_arm": 800,
+      "control_defects": 106,
+      "treatment_defects": 56
+    }
+  ],
+  "ledger": {
+    "measurement": true,
+    "labels": true,
+    "cause": true,
+    "effect": true,
+    "improvement_claim": true,
+    "control_plan": true
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "configuration": {
+    "repetitions": 100,
+    "seed": 20261027,
+    "n": 800,
+    "budget": 30.0,
+    "out": "results",
+    "minimum_benefit": 0.01
+  },
+  "summary": [
+    {
+      "policy": "historical",
+      "cases": 1500,
+      "claims": 639,
+      "false_claims": 419,
+      "false_claim_fraction_of_claims": 0.6557120500782473,
+      "true_claims": 220,
+      "missed_opportunities": 280,
+      "mean_cost": 1.0,
+      "mean_deployed_risk_reduction": -0.0010533333333332883
+    },
+    {
+      "policy": "stop",
+      "cases": 1500,
+      "claims": 25,
+      "false_claims": 0,
+      "false_claim_fraction_of_claims": 0.0,
+      "true_claims": 25,
+      "missed_opportunities": 475,
+      "mean_cost": 4.2,
+      "mean_deployed_risk_reduction": 0.0006666666666666669
+    },
+    {
+      "policy": "full_revalidation",
+      "cases": 1500,
+      "claims": 125,
+      "false_claims": 0,
+      "false_claim_fraction_of_claims": 0.0,
+      "true_claims": 125,
+      "missed_opportunities": 375,
+      "mean_cost": 27.0,
+      "mean_deployed_risk_reduction": 0.0033333333333333357
+    },
+    {
+      "policy": "targeted_recovery",
+      "cases": 1500,
+      "claims": 125,
+      "false_claims": 0,
+      "false_claim_fraction_of_claims": 0.0,
+      "true_claims": 125,
+      "missed_opportunities": 375,
+      "mean_cost": 21.0,
+      "mean_deployed_risk_reduction": 0.0033333333333333357
+    }
+  ],
+  "by_fault": {
+    "clean": [
+      {
+        "policy": "historical",
+        "cases": 300,
+        "claims": 20,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 20,
+        "missed_opportunities": 80,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.002666666666666667
+      },
+      {
+        "policy": "stop",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 17.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      },
+      {
+        "policy": "full_revalidation",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 27.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      },
+      {
+        "policy": "targeted_recovery",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 17.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      }
+    ],
+    "sensor_drift": [
+      {
+        "policy": "historical",
+        "cases": 300,
+        "claims": 0,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": null,
+        "true_claims": 0,
+        "missed_opportunities": 100,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.0
+      },
+      {
+        "policy": "stop",
+        "cases": 300,
+        "claims": 0,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": null,
+        "true_claims": 0,
+        "missed_opportunities": 100,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.0
+      },
+      {
+        "policy": "full_revalidation",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 27.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      },
+      {
+        "policy": "targeted_recovery",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 21.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      }
+    ],
+    "label_error": [
+      {
+        "policy": "historical",
+        "cases": 300,
+        "claims": 161,
+        "false_claims": 61,
+        "false_claim_fraction_of_claims": 0.37888198757763975,
+        "true_claims": 100,
+        "missed_opportunities": 0,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.012866666666666676
+      },
+      {
+        "policy": "stop",
+        "cases": 300,
+        "claims": 0,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": null,
+        "true_claims": 0,
+        "missed_opportunities": 100,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.0
+      },
+      {
+        "policy": "full_revalidation",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 27.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      },
+      {
+        "policy": "targeted_recovery",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 23.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      }
+    ],
+    "confounding": [
+      {
+        "policy": "historical",
+        "cases": 300,
+        "claims": 248,
+        "false_claims": 148,
+        "false_claim_fraction_of_claims": 0.5967741935483871,
+        "true_claims": 100,
+        "missed_opportunities": 0,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.009666666666666672
+      },
+      {
+        "policy": "stop",
+        "cases": 300,
+        "claims": 0,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": null,
+        "true_claims": 0,
+        "missed_opportunities": 100,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.0
+      },
+      {
+        "policy": "full_revalidation",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 27.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      },
+      {
+        "policy": "targeted_recovery",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 17.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      }
+    ],
+    "combined": [
+      {
+        "policy": "historical",
+        "cases": 300,
+        "claims": 210,
+        "false_claims": 210,
+        "false_claim_fraction_of_claims": 1.0,
+        "true_claims": 0,
+        "missed_opportunities": 100,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": -0.030466666666666614
+      },
+      {
+        "policy": "stop",
+        "cases": 300,
+        "claims": 0,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": null,
+        "true_claims": 0,
+        "missed_opportunities": 100,
+        "mean_cost": 1.0,
+        "mean_deployed_risk_reduction": 0.0
+      },
+      {
+        "policy": "full_revalidation",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 27.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      },
+      {
+        "policy": "targeted_recovery",
+        "cases": 300,
+        "claims": 25,
+        "false_claims": 0,
+        "false_claim_fraction_of_claims": 0.0,
+        "true_claims": 25,
+        "missed_opportunities": 75,
+        "mean_cost": 27.0,
+        "mean_deployed_risk_reduction": 0.003333333333333334
+      }
+    ]
+  }
+}

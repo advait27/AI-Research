@@ -1,0 +1,39 @@
+{
+  "status": "exploratory post-hoc reanalysis; not independent route validation",
+  "benefit_definition": "true deployed absolute risk reduction > 0.01",
+  "support_definition": "all declared diagnostic prerequisites met or repaired, reconstructed from scenario and implemented policy; not an assessment of every scientific assumption",
+  "rows": [
+    {
+      "policy": "historical",
+      "accepted": 639,
+      "beneficial_supported": 20,
+      "beneficial_unsupported": 200,
+      "nonbeneficial_supported": 0,
+      "nonbeneficial_unsupported": 419
+    },
+    {
+      "policy": "stop",
+      "accepted": 25,
+      "beneficial_supported": 25,
+      "beneficial_unsupported": 0,
+      "nonbeneficial_supported": 0,
+      "nonbeneficial_unsupported": 0
+    },
+    {
+      "policy": "full_revalidation",
+      "accepted": 125,
+      "beneficial_supported": 125,
+      "beneficial_unsupported": 0,
+      "nonbeneficial_supported": 0,
+      "nonbeneficial_unsupported": 0
+    },
+    {
+      "policy": "targeted_recovery",
+      "accepted": 125,
+      "beneficial_supported": 125,
+      "beneficial_unsupported": 0,
+      "nonbeneficial_supported": 0,
+      "nonbeneficial_unsupported": 0
+    }
+  ]
+}
