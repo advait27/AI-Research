@@ -51,7 +51,7 @@ Forward Deployed Engineering (FDE) has rapidly emerged as a critical practice fo
 
 **Abstract**
 
-Governance platforms for agentic artificial intelligence now compile runtime telemetry into regulator-facing compliance evidence. Whether the resulting records can actually support the findings of fact that oversight requires has not been measured. We operationalise a published evidentiary-adequacy criterion, under which a runtime record answers a determination only if it carries both a typing that maps events to the legally operative category and the relation on which the determination depends, and we build the first benchmark that tests it. We generate 1,200 enterprise agent trajectories spanning 36,296 steps across six determination families, with ground truth known by construction, and instrument each trajectory under four record conditions: an application action log, OpenTelemetry GenAI spans, a governance layer carrying policy verdicts and article mappings, and a substrate that propagates information-flow labels and capability state into spans.
+Governance platforms for agentic artificial intelligence now compile runtime telemetry into regulator-facing compliance evidence. Recent work scores whether such records are sufficient to reconstruct the properties of an agent decision, but not whether the findings of fact recovered from them are right. We operationalise a published evidentiary-adequacy criterion, under which a runtime record answers a determination only if it carries both a typing that maps events to the legally operative category and the relation on which the determination depends, and we build the first benchmark that tests it. We generate 1,200 enterprise agent trajectories spanning 36,296 steps across six determination families, with ground truth known by construction, and instrument each trajectory under four record conditions: an application action log, OpenTelemetry GenAI spans, a governance layer carrying policy verdicts and article mappings, and a substrate that propagates information-flow labels and capability state into spans.
 
 **Headline results**
 
@@ -71,16 +71,16 @@ Three findings are worth stating plainly.
 The substrate costs 4.8% more serialised bytes than the governance layer it extends, and 8.4% more after compression.
 
 **Paper:** [`What_Agent_Traces_Cannot_Tell_You_Evidentiary_Adequacy_of_Runtime_Records_for_Agentic_AI_Oversight.pdf`](What_Agent_Traces_Cannot_Tell_You_Evidentiary_Adequacy_of_Runtime_Records_for_Agentic_AI_Oversight.pdf)
-**Code and data:** [`adequacy-bench/`](adequacy-bench/)
+**Code and data:** [`AdequacyBenchartifact/`](AdequacyBenchartifact/)
 
 ---
 
 ## AdequacyBench
 
-The benchmark, four record emitters, resolvers, experiment driver and full result set behind Paper 2 live in [`adequacy-bench/`](adequacy-bench/).
+The benchmark, four record emitters, resolvers, experiment driver and full result set behind Paper 2 live in [`AdequacyBenchartifact/`](AdequacyBenchartifact/).
 
 ```
-adequacy-bench/
+AdequacyBenchartifact/
   adqbench/model.py      labelled values, capabilities, events, trajectories
   adqbench/generate.py   six determination families with adversarial decoys
   adqbench/emit.py       four record conditions
@@ -116,6 +116,62 @@ Requires Python 3 with scipy and matplotlib. Runtime is roughly 30 seconds. Ever
 2. Each emitter writes only what that class of instrumentation can honestly know. The baselines are modelled from published descriptions, deliberately generously where there was doubt.
 3. Ground truth is known by construction, never adjudicated after the fact. This is the reason the corpus is generated rather than collected: obtaining ground-truth determinations from production data would require legal adjudication of every case.
 4. The heuristic resolver is a stipulated model of practitioner inference, not measured human behaviour. Any claim about what auditors actually conclude requires an expert panel, which has not yet been run.
+
+---
+
+### 3. Process Version Aware Evidence Recovery for AI Assisted Six Sigma
+
+**Status:** Preprint
+**Type:** Empirical, simulation study and reference implementation
+**DOI:** [10.5281/zenodo.23834103](https://doi.org/10.5281/zenodo.23834103)
+
+**Abstract**
+
+This paper investigates how AI-assisted Six Sigma systems can recover evidence-supported improvement decisions when diagnostics fail or corrective actions change the manufacturing process. The framework tracks process and observation versions separately and binds confirmation evidence to the configuration named in a claim. Evidence obtained after a physical repair cannot automatically validate an earlier process version.
+
+**Headline results**
+
+Study I separates substantive benefit from prerequisite support in an idealized simulation. Study II evaluates noisy diagnostics, imperfect repairs, eight policies and three resource budgets, producing 2,880 episodes per policy and 23,040 evaluation traces.
+
+| Policy | Supported beneficial acceptances | Mean cost |
+|---|---|---|
+| Full revalidation | 92 | 16.07 |
+| Conservative decision-loss | 34 | 4.40 |
+
+1. **Lower expenditure accompanies fewer useful recoveries.** The cheaper policy is not a free saving; it gives up most of the supported improvements.
+2. **Bookkeeping errors are invisible in outcomes.** A deliberately faulty bookkeeping ablation preserves identical deployment outcomes but produces 92 wrong-version endorsements.
+
+These are simulation results. No LLM, real manufacturing deployment or general first-ever novelty is claimed.
+
+**Paper:** [`process-version-aware-evidence-recovery.pdf`](Process-Version-Evidence-Recovery/process-version-aware-evidence-recovery.pdf)
+**Code and data:** [`Process-Version-Evidence-Recovery/`](Process-Version-Evidence-Recovery/)
+
+---
+
+## Process Version Evidence Recovery
+
+The simulators, the eight recovery policies, a reference replay of the evaluation traces and all results behind Paper 3 live in [`Process-Version-Evidence-Recovery/`](Process-Version-Evidence-Recovery/). See its [README](Process-Version-Evidence-Recovery/README.md) for the full contents, protocol history and limitations.
+
+```
+Process-Version-Evidence-Recovery/
+  src/experiment.py          Study I idealized manufacturing experiment
+  src/versioned_recovery.py  process version extension and eight recovery policies
+  src/audit_versioned.py     reference replay of evaluation traces
+  tests/                     sixteen behavioral tests
+  research/                  study protocols and initial results
+  results/                   original, sensitivity, development and evaluation results
+  SHA256SUMS.txt             checksums for every released file
+```
+
+Reproduce from inside that folder with:
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 src/versioned_recovery.py --split evaluation
+python3 src/audit_versioned.py
+```
+
+Requires Python 3.10 or later and only the standard library. Extension evaluation uses seed 20271031, and the reference replay checks all 23,040 traces with no scoring mismatches.
 
 ---
 
@@ -168,6 +224,7 @@ Planned and in-progress research topics:
   title        = {Forward Deployed Engineering: A Systems Engineering Perspective},
   year         = {2026},
   note         = {Preprint},
+  doi          = {10.5281/zenodo.22813634},
   howpublished = {\url{https://github.com/advait27/AI-Research}}
 }
 
@@ -177,6 +234,15 @@ Planned and in-progress research topics:
                   Runtime Records for Agentic AI Oversight},
   year         = {2026},
   note         = {Preprint. Benchmark and reference implementation released as AdequacyBench},
+  howpublished = {\url{https://github.com/advait27/AI-Research}}
+}
+
+@misc{dharmadhikari2026processversion,
+  author       = {Dharmadhikari, Advait},
+  title        = {Process Version Aware Evidence Recovery for AI Assisted Six Sigma},
+  year         = {2026},
+  note         = {Preprint. Simulation code and results in Process-Version-Evidence-Recovery},
+  doi          = {10.5281/zenodo.23834103},
   howpublished = {\url{https://github.com/advait27/AI-Research}}
 }
 ```
@@ -189,6 +255,7 @@ BibTeX entries will be updated with DOIs and venue details as papers are formall
 
 **Advait Dharmadhikari**
 
+- ORCID: https://orcid.org/0009-0005-5690-8338
 - LinkedIn: https://linkedin.com/in/advaitdharmadhikari
 - GitHub: https://github.com/advait27
 
@@ -198,4 +265,6 @@ BibTeX entries will be updated with DOIs and venue details as papers are formall
 
 Unless otherwise specified, all papers remain the intellectual property of their respective authors. Please cite appropriately when referencing this work.
 
-Code in `adequacy-bench/` is released to support replication and independent verification of the results reported in Paper 2.
+Code in `AdequacyBenchartifact/` is released to support replication and independent verification of the results reported in Paper 2.
+
+Code in `Process-Version-Evidence-Recovery/` is released to support replication of the results reported in Paper 3.
