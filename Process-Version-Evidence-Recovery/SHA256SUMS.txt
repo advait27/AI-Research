@@ -1,4 +1,3 @@
-fa5b2d4433b835933b22140e01833a4972a0ee8532d76951286e3dd071994af0  .gitignore
 04293fff0c44efbb048cd46df32ac6d938f6ac1961cc57d19012a55e7c3c1933  README.md
 81cf79dc53e2bc580e0b1bc46063fb81d6ffa9fd4d49bd6784b76937dad653f2  draft-notes.txt
 e8313ffe1fd5d5760e561d87d5ac2e0570b78399b3d7da32d1cae5c25bc17a3d  process-version-aware-evidence-recovery.docx
